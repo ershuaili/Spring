@@ -9,7 +9,7 @@ package com.example.service;
  */
 public interface UserService {
     /**
-     * 接口
+     * UserService的接口
      */
     void getUser();
 }

@@ -9,7 +9,7 @@ package com.example.dao;
  */
 public interface UserDao {
     /**
-     * 接口
+     * 接口类
      */
     void getUser();
 }
