@@ -17,6 +17,14 @@ public class Hello {
     public void setName(String name) {
         this.name = name;
     }
+
+    @Override
+    public String toString() {
+        return "Hello{" +
+                "name='" + name + '\'' +
+                '}';
+    }
+
     public void show(){
         System.out.println("Hello"+name);
     }
