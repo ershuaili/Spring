@@ -1,9 +1,9 @@
 package com.example;
 
-import com.example.dao.UserDaoImpl;
-import com.example.dao.UserDaoMySqlImpl;
 import com.example.service.UserServiceImpl;
 import org.junit.jupiter.api.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * Created by IntelliJ IDEA.
@@ -15,13 +15,18 @@ import org.junit.jupiter.api.Test;
 public class MyTest {
     @Test
     public void test() {
-        //用户实际接触的事业务层，Dao层不会接触
+        ApplicationContext context = new ClassPathXmlApplicationContext("ApplicationContext.xml");
+
+        UserServiceImpl userServiceImpl = (UserServiceImpl) context.getBean("UserServiceImpl");
+        userServiceImpl.getUser();
+
+   /*     //用户实际接触的事业务层，Dao层不会接触
         UserServiceImpl service = new UserServiceImpl();
         //调用MySQL实现
         service.setUserDao(new UserDaoMySqlImpl());
         service.getUser();
         //那我们现在又想用默认去实现呢
         service.setUserDao(new UserDaoImpl());
-        service.getUser();
+        service.getUser();*/
     }
 }
