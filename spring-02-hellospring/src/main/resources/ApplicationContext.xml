@@ -5,7 +5,7 @@
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!--使用Spring来创建对象，在Spring中这些都称为Bean-->
-    <bean id="hello" class="com.example.dao.User">
+    <bean id="hello" class="com.example.dao.Hello">
         <property name="name" value="Spring"/>
     </bean>
 

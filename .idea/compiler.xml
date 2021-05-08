@@ -9,13 +9,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-03-IOC" />
         <module name="spring-01" />
-        <module name="spring-04-di" />
-      </profile>
-      <profile name="Annotation profile for Spring" enabled="true">
-        <sourceOutputDir name="../spring-02/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../spring-02/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
         <module name="spring-02-hellospring" />
+        <module name="spring-04-di" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
