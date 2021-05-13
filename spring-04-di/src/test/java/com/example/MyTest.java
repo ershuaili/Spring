@@ -26,4 +26,11 @@ public class MyTest {
         System.out.println(user);
     }
 
+    @Test
+    public void test3(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("userbeans.xml");
+        User user = (User) context.getBean("user1");
+        System.out.println(user);
+    }
+
 }

@@ -1,8 +1,6 @@
 package com.example.pojo;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 /**
  * Created by IntelliJ IDEA.
@@ -14,6 +12,8 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
+@NoArgsConstructor
+@AllArgsConstructor
 public class User {
     private String name;
     private int age;
